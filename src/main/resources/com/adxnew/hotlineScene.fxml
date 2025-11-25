@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #525252;" stylesheets="@buttonStyles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adxnew.HotlineController">
+   <children>
+      <VBox alignment="CENTER" spacing="20.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <Label text="EMERGENCY HOTLINE" textFill="WHITE">
+            <font>
+               <Font name="Bauhaus 93" size="38.0" />
+            </font>
+         </Label>
+
+         <HBox alignment="CENTER" spacing="20.0">
+            <Button fx:id="fireButton" onAction="#showPanel" style="-fx-background-color: #c2c3c4; -fx-font-size: 18;" styleClass="menu-button" text="FIRE" />
+                    
+            <Button fx:id="medicButton" onAction="#showPanel" style="-fx-background-color: #c2c3c4; -fx-font-size: 18;" styleClass="menu-button" text="MEDICAL" />
+                    
+            <Button fx:id="disasterButton" onAction="#showPanel" style="-fx-background-color: #c2c3c4; -fx-font-size: 18;" styleClass="menu-button" text="DISASTER" />
+                    
+            <Button fx:id="policeButton" onAction="#showPanel" style="-fx-background-color: #c2c3c4; -fx-font-size: 18;" styleClass="menu-button" text="POLICE" />
+         </HBox>
+
+         <StackPane fx:id="cardStack">
+            <VBox fx:id="firePanel" alignment="CENTER" spacing="10.0" visible="false">
+               <Label text="Fire Emergency Hotlines" textFill="WHITE">
+                  <font>
+                     <Font name="Bauhaus 93" size="24.0" />
+                  </font>
+               </Label>
+               <Label text="Mandaluyong: 8543-2189 or 8532-2402" textFill="WHITE" />
+               <Label text="Pasig: 8641-2815" textFill="WHITE" />
+               
+               <Label text="Caloocan City: (02) 8854-2115" textFill="WHITE" />
+               <Label text="Malabon City: (02) 285-0525" textFill="WHITE" />
+               <Label text="Navotas City: (02) 281-7820" textFill="WHITE" />
+               <Label text="Valenzuela City: (02) 291-4894" textFill="WHITE" />
+               <Label text="Quezon City: (02) 8921-1911" textFill="WHITE" />
+               <Label text="Manila City: (02) 8527-3627" textFill="WHITE" />
+               <Label text="San Juan City: (02) 8726-4365" textFill="WHITE" />
+               <Label text="Mandaluyong City: (02) 8534-2102" textFill="WHITE" />
+               <Label text="Makati City: (02) 8882-3200" textFill="WHITE" />
+               <Label text="Pasig City: (02) 8641-2165" textFill="WHITE" />
+               <Label text="Taguig City: (02) 8642-9100" textFill="WHITE" />
+               <Label text="Pasay City: (02) 8521-4064" textFill="WHITE" />
+               <Label text="Parañaque City: (02) 8828-8391" textFill="WHITE" />
+               <Label text="Muntinlupa City: (02) 8628-0197" textFill="WHITE" />
+               <Label text="Las Piñas City: (02) 8743-7021" textFill="WHITE" />
+               <Label text="Pateros: (02) 8643-5016" textFill="WHITE" />
+            </VBox>
+
+            <VBox fx:id="medicPanel" alignment="CENTER" spacing="10.0" visible="false">
+               <Label text="Medical Emergency Hotlines" textFill="WHITE">
+                  <font>
+                        <Font name="Bauhaus 93" size="24.0" />
+                  </font>
+               </Label>
+               <Label text="Caloocan City (north): 277-28-85" textFill="WHITE" />
+               <Label text="Caloocan City (south): 288-77-17" textFill="WHITE" />
+               <Label text="Makati City: 168 or 8236-5790" textFill="WHITE" />
+               <Label text="Mandaluyong City: 532-21-89 or 532-24-02" textFill="WHITE" />
+               <Label text="Manila City: 927-13-35 or 978-53-12" textFill="WHITE" />
+               <Label text="Marikina City: 646-24-36 or 646-24-26" textFill="WHITE" />
+               <Label text="Muntinlupa City: 137-175 or 8373-51-65" textFill="WHITE" />
+               <Label text="Paranaque City: 829-09-22" textFill="WHITE" />
+               <Label text="Pasig City: 8643-3333 | 8642-7379 | 8642-7381" textFill="WHITE" />
+               <Label text="Pateros: 642-51-59" textFill="WHITE" />
+               <Label text="San Juan City: 238-43-33" textFill="WHITE" />
+               <Label text="Valenzuela City: 292-14-05 or 0915-2598376" textFill="WHITE" />
+            </VBox>
+
+            <VBox fx:id="disasterPanel" alignment="CENTER" spacing="10.0" visible="false">
+               <Label text="Disaster Emergency Hotlines" textFill="WHITE">
+                  <font>
+                        <Font name="Bauhaus 93" size="24.0" />
+                  </font>
+               </Label>
+               <Label text="Caloocan City (north): 277-28-85" textFill="WHITE" />
+               <Label text="Caloocan City (south): 288-77-17" textFill="WHITE" />
+               <Label text="Makati City: 168 or 8236-5790" textFill="WHITE" />
+               <Label text="Mandaluyong City: 532-21-89 or 532-24-02" textFill="WHITE" />
+               <Label text="Manila City: 927-13-35 or 978-53-12" textFill="WHITE" />
+               <Label text="Marikina City: 646-24-36 or 646-24-26" textFill="WHITE" />
+               <Label text="Muntinlupa City: 137-175 or 8373-51-65" textFill="WHITE" />
+               <Label text="Paranaque City: 829-09-22" textFill="WHITE" />
+               <Label text="Pasig City: 8643-0000" textFill="WHITE" />
+               <Label text="Pateros: 642-51-59" textFill="WHITE" />
+               <Label text="San Juan City: 238-43-33" textFill="WHITE" />
+               <Label text="Valenzuela City: 292-14-05 or 0915-2598376" textFill="WHITE" />
+            </VBox>
+
+            <VBox fx:id="policePanel" alignment="CENTER" spacing="10.0" visible="false">
+               <Label text="Police Emergency Hotlines" textFill="WHITE">
+                  <font>
+                     <Font name="Bauhaus 93" size="24.0" />
+                  </font>
+               </Label>
+               <Label text="Mandaluyong: 8532-2145" textFill="WHITE" />
+               <Label text="Pasig: 8477-7953" textFill="WHITE" />
+               <Label text="Caloocan City: (02) 288-8819" textFill="WHITE" />
+               <Label text="Malabon City: (02) 288-8697" textFill="WHITE" />
+               <Label text="Navotas City: (02) 283-5491" textFill="WHITE" />
+               <Label text="Valenzuela City: (02) 294-7993" textFill="WHITE" />
+               <Label text="Quezon City: (02) 8921-8417" textFill="WHITE" />
+               <Label text="Manila City: (02) 8527-3087" textFill="WHITE" />
+               <Label text="San Juan City: (02) 8725-5726" textFill="WHITE" />
+               <Label text="Mandaluyong City: (02) 8533-6047" textFill="WHITE" />
+               <Label text="Makati City: (02) 8882-0657" textFill="WHITE" />
+               <Label text="Pasig City: (02) 8641-1670" textFill="WHITE" />
+               <Label text="Taguig City: (02) 8641-1111" textFill="WHITE" />
+               <Label text="Pasay City: (02) 8527-1838" textFill="WHITE" />
+               <Label text="Parañaque City: (02) 8820-8224" textFill="WHITE" />
+               <Label text="Muntinlupa City: (02) 8626-4563" textFill="WHITE" />
+               <Label text="Las Piñas City: (02) 8741-5284" textFill="WHITE" />
+               <Label text="Pateros: (02) 8641-3684" textFill="WHITE" />
+            </VBox>
+
+            <VBox fx:id="nationalPanel" alignment="CENTER" spacing="10.0" visible="false">
+               <Label text="National Emergency Hotlines" textFill="WHITE">
+                  <font>
+                     <Font name="Bauhaus 93" size="24.0" />
+                  </font>
+               </Label>
+               <ScrollPane fitToWidth="true" maxHeight="500" style="-fx-background: #525252; -fx-background-color: #525252;">
+                  <VBox spacing="10" style="-fx-background-color: #525252;">
+                     <Label style="-fx-font-weight: bold;" text="1. National Emergency Hotlines" textFill="WHITE" />
+                     <Label text="911: National Emergency Hotline" textFill="WHITE" />
+                     <Label text="117 (PNP Hotline): Philippine National Police" textFill="WHITE" />
+                     
+                     <Label style="-fx-font-weight: bold;" text="Philippine Red Cross:" textFill="WHITE" />
+                     <Label text="Hotline: 143" textFill="WHITE" />
+                     <Label text="Ambulance &amp; Medical Assistance: (+63 2) 8790-2300" textFill="WHITE" />
+                     
+                     <Label style="-fx-font-weight: bold;" text="National Disaster Risk Reduction and Management Council (NDRRMC):" textFill="WHITE" />
+                     <Label text="Operations Center: (+63 2) 8911-5061 to 65" textFill="WHITE" />
+                     <Label text="SMS: (+63 917) 8911-1873 / (+63 929) 8911-1873" textFill="WHITE" />
+                     
+                     <Label style="-fx-font-weight: bold;" text="2. Metro Manila Bureau of Fire Protection (BFP):" textFill="WHITE" />
+                     <Label text="Hotline (24/7): (02) 8426-0219 / (02) 8426-3812" textFill="WHITE" />
+                     <Label text="Direct Fire Emergency: 911" textFill="WHITE" />
+                     
+                     <Label style="-fx-font-weight: bold;" text="3. Medical Assistance:" textFill="WHITE" />
+                     <Label text="DOH Emergency Health Response: (02) 8651-7800" textFill="WHITE" />
+                     <Label text="Rescue 161: 161" textFill="WHITE" />
+                  </VBox>
+               </ScrollPane>
+            </VBox>
+         </StackPane>
+      </VBox>
+      <Button fx:id="backButton" layoutX="350.0" layoutY="655.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #c2c3c4; -fx-background-radius: 30; -fx-text-fill: white; -fx-font-size: 18; -fx-font-family: 'Bauhaus 93';" styleClass="menu-button" text="BACK">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

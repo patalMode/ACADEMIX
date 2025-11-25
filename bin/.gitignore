@@ -1,0 +1,27 @@
+﻿# Maven / Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+logs/
+*.log
+release/
+
+# IDE
+.idea/
+.project
+.classpath
+.settings/
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Build/system
+.mvn/wrapper/maven-wrapper.jar
+*.iml
+
+# mac / windows files
+*.swp

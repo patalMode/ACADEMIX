@@ -1,0 +1,156 @@
+.calc-button {
+    -fx-background-radius: 30;
+    -fx-background-color:  #2dce98;
+    -fx-text-fill: white;
+    -fx-font-size: 24;
+    -fx-font-family: 'Bauhaus 93';
+    -fx-min-width: 100;
+    -fx-min-height: 30;
+    -fx-transition: all 0.2s ease;
+}
+
+.menu-button {
+    -fx-background-color: #85ccc7;
+    -fx-text-fill: white;
+    -fx-font-family: 'Bauhaus 93';
+    -fx-font-size: 16px;
+    -fx-background-radius: 30;
+    -fx-min-width: 100;
+    -fx-min-height: 35;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 0);
+}
+
+.menu-button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-opacity: 0.8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.menu-button:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 3, 0, 0, 0);
+}
+
+.crib-button {
+    -fx-background-color: #f8d463;
+    -fx-text-fill: #432b2b;
+    -fx-font-family: 'Bauhaus 93';
+    -fx-font-size: 14px;
+    -fx-background-radius: 30;
+    -fx-min-width: 100;
+    -fx-min-height: 35;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 0);
+}
+
+.crib-button:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-background-color: #e3fc00;
+    -fx-effect: dropshadow(gaussian, white, 15, 0.3, 0, 0);
+    -fx-cursor: hand;
+}
+
+.crib-button:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 3, 0, 0, 0);
+}
+
+.root-scene {
+    -fx-background-color: #f8d463;
+    -fx-background-radius: 20;
+}
+
+AnchorPane {
+    -fx-background-radius: 20;
+}
+
+.calc-button:hover{
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 15, 0, 0, 0);
+}
+
+.calc-button:pressed{
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+    -fx-opacity: 0.7;
+}
+
+.element-button {
+    -fx-background-color: #d68171;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-font-family: 'Bauhaus 93';
+    -fx-font-size: 16;
+    -fx-min-width: 50;
+    -fx-min-height: 50;
+    -fx-transition: all 1s ease;
+}
+
+.element-button:hover {
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-opacity: 0.7;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+.hydrogen {
+    -fx-background-color: #FF69B4; /* Pink */
+}
+
+.noble-gas {
+    -fx-background-color: #FF6B6B; /* Red */
+}
+
+.alkali-metal {
+    -fx-background-color: #4DACFF; /* Blue */
+}
+
+.alkaline-earth-metal {
+    -fx-background-color: #0989c9; /* Light Blue */
+}
+
+.transition-metal {
+    -fx-background-color: #FFB84D; /* Orange */
+}
+
+.post-transition-metal {
+    -fx-background-color: #6fb900; /* Light Green */
+}
+
+.metalloid {
+    -fx-background-color: #92ce1a; /* Yellow-Green */
+}
+
+.nonmetal {
+    -fx-background-color: #c4a600; /* Yellow */
+}
+
+.lanthanoid {
+    -fx-background-color: #FF4D4D; /* Bright Red */
+}
+
+.actinoid {
+    -fx-background-color: #FF4DA6; /* Pink-Red */
+}
+
+.custom-alert {
+    -fx-background-color: white;
+}
+
+.custom-alert > *.header-panel {
+    -fx-background-color: white;
+}
+
+.custom-alert .content {
+    -fx-text-fill: white;
+}
+
+.custom-alert .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-family: 'Bauhaus 93';
+}

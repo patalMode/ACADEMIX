@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #525252;" stylesheets="@buttonStyles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adxnew.HealthController">
+   <children>
+      <VBox alignment="CENTER" spacing="20.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <Label text="HEALTH TRACKER" textFill="WHITE">
+            <font>
+               <Font name="Bauhaus 93" size="38.0" />
+            </font>
+         </Label>
+         <Label text="Please enter your data for today:" textFill="WHITE">
+            <font>
+               <Font name="Bauhaus 93" size="18.0" />
+            </font>
+         </Label>
+
+         <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+
+            <Label text="Exercise Duration (minutes):" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <font>
+                     <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="exerField" maxWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Hours of sleep:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <font>
+                     <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="sleepField" maxWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Calorie Intake:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="2">
+               <font>
+                     <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="calorieField" maxWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label fx:id="exerFeedback" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="sleepFeedback" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="calorieFeedback" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+
+            <Button fx:id="submitAgainButton" onAction="#resetForm" style="-fx-background-color: #d68171;" styleClass="calc-button" text="Enter Another Data" visible="false" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+
+            <columnConstraints>
+               <ColumnConstraints />
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+         </GridPane>
+      </VBox>
+
+      <Button fx:id="backButton" layoutX="340.0" layoutY="651.0" onAction="#handleBackButton" style="-fx-background-color: #d68171;" styleClass="menu-button" text="Back" />
+
+      <Button fx:id="submitButton" layoutX="308.0" layoutY="477.0" onAction="#handleSubmit" style="-fx-background-color: #d68171;" styleClass="calc-button" text="Submit Data" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,5 @@
+.root-scene {
+    -fx-background-color: #525252;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}

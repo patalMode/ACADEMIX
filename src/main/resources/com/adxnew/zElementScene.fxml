@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" style="-fx-background-color: #525252;" stylesheets="@buttonStyles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adxnew.ZElementController">
+   <children>
+      <VBox alignment="CENTER" spacing="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <Label text="PERIODIC TABLE" textFill="WHITE">
+            <font>
+               <Font name="Bauhaus 93" size="38.0" />
+            </font>
+         </Label>
+
+         <GridPane fx:id="periodicGrid" alignment="CENTER" hgap="5.0" prefHeight="495.0" prefWidth="1094.0" vgap="5.0">
+            <!-- Period 1 -->
+            <Button fx:id="h" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, hydrogen" text="H" />
+            <Button fx:id="he" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, noble-gas" text="He" GridPane.columnIndex="17" />
+
+            <!-- Period 2 -->
+            <Button fx:id="li" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button,alkali-metal" text="Li" GridPane.rowIndex="1" />
+            <Button fx:id="be" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button,alkaline-earth-metal" text="Be" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="b" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button,metalloid" text="B" GridPane.columnIndex="12" GridPane.rowIndex="1" />
+            <Button fx:id="c" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button,nonmetal" text="C" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+            <Button fx:id="n" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button,nonmetal" text="N" GridPane.columnIndex="14" GridPane.rowIndex="1" />
+            <Button fx:id="o" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button,nonmetal" text="O" GridPane.columnIndex="15" GridPane.rowIndex="1" />
+            <Button fx:id="f" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button,nonmetal" text="F" GridPane.columnIndex="16" GridPane.rowIndex="1" />
+            <Button fx:id="ne" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, noble-gas" text="Ne" GridPane.columnIndex="17" GridPane.rowIndex="1" />
+
+            <!-- Period 3 -->
+            <Button fx:id="na" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, alkali-metal" text="Na" GridPane.rowIndex="2" />
+            <Button fx:id="mg" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, alkaline-earth-metal" text="Mg" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="al" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, post-transition-metal" text="Al" GridPane.columnIndex="12" GridPane.rowIndex="2" />
+            <Button fx:id="si" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, metalloid" text="Si" GridPane.columnIndex="13" GridPane.rowIndex="2" />
+            <Button fx:id="p" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, nonmetal" text="P" GridPane.columnIndex="14" GridPane.rowIndex="2" />
+            <Button fx:id="s" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, nonmetal" text="S" GridPane.columnIndex="15" GridPane.rowIndex="2" />
+            <Button fx:id="cl" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, nonmetal" text="Cl" GridPane.columnIndex="16" GridPane.rowIndex="2" />
+            <Button fx:id="ar" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, noble-gas" text="Ar" GridPane.columnIndex="17" GridPane.rowIndex="2" />
+
+            <!-- Period 4 -->
+            <Button fx:id="k" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, alkali-metal" text="K" GridPane.rowIndex="3" />
+            <Button fx:id="ca" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, alkaline-earth-metal" text="Ca" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="sc" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Sc" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="ti" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Ti" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="v" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="V" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="cr" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Cr" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Button fx:id="mn" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Mn" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Button fx:id="fe" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Fe" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Button fx:id="co" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Co" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <Button fx:id="ni" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Ni" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <Button fx:id="cu" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Cu" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+            <Button fx:id="zn" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Zn" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+            <Button fx:id="ga" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, post-transition-metal" text="Ga" GridPane.columnIndex="12" GridPane.rowIndex="3" />
+            <Button fx:id="ge" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, metalloid" text="Ge" GridPane.columnIndex="13" GridPane.rowIndex="3" />
+            <Button fx:id="as" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, metalloid" text="As" GridPane.columnIndex="14" GridPane.rowIndex="3" />
+            <Button fx:id="se" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, nonmetal" text="Se" GridPane.columnIndex="15" GridPane.rowIndex="3" />
+            <Button fx:id="br" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, nonmetal" text="Br" GridPane.columnIndex="16" GridPane.rowIndex="3" />
+            <Button fx:id="kr" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, noble-gas" text="Kr" GridPane.columnIndex="17" GridPane.rowIndex="3" />
+
+            <Button fx:id="rb" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, alkali-metal" text="Rb" GridPane.rowIndex="4" />
+            <Button fx:id="sr" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, alkaline-earth-metal" text="Sr" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="y" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Y" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="zr" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Zr" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="nb" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Nb" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Button fx:id="mo" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Mo" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Button fx:id="tc" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Tc" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Button fx:id="ru" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Ru" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Button fx:id="rh" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Rh" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <Button fx:id="pd" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Pd" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+            <Button fx:id="ag" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Ag" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+            <Button fx:id="cd" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Cd" GridPane.columnIndex="11" GridPane.rowIndex="4" />
+            <Button fx:id="in" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, post-transition-metal" text="In" GridPane.columnIndex="12" GridPane.rowIndex="4" />
+            <Button fx:id="sn" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, post-transition-metal" text="Sn" GridPane.columnIndex="13" GridPane.rowIndex="4" />
+            <Button fx:id="sb" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, post-transition-metal" text="Sb" GridPane.columnIndex="14" GridPane.rowIndex="4" />
+            <Button fx:id="te" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, metalloid" text="Te" GridPane.columnIndex="15" GridPane.rowIndex="4" />
+            <Button fx:id="i" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, nonmetal" text="I" GridPane.columnIndex="16" GridPane.rowIndex="4" />
+            <Button onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, noble-gas" text="Xe" GridPane.columnIndex="17" GridPane.rowIndex="4" fx:id="xe" />
+            
+            <!-- Period 6 -->
+            <Button fx:id="cs" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, alkali-metal" text="Cs" GridPane.rowIndex="5" />
+            <Button fx:id="ba" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, alkaline-earth-metal" text="Ba" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="hf" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Hf" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button fx:id="ta" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Ta" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Button fx:id="w" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="W" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Button fx:id="re" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Re" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Button fx:id="os" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Os" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Button fx:id="ir" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Ir" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <Button fx:id="pt" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Pt" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+            <Button fx:id="au" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Au" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+            <Button fx:id="hg" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Hg" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+            <Button fx:id="tl" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, post-transition-metal" text="Tl" GridPane.columnIndex="12" GridPane.rowIndex="5" />
+            <Button fx:id="pb" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, post-transition-metal" text="Pb" GridPane.columnIndex="13" GridPane.rowIndex="5" />
+            <Button fx:id="bi" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, post-transition-metal" text="Bi" GridPane.columnIndex="14" GridPane.rowIndex="5" />
+            <Button fx:id="po" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, metalloid" text="Po" GridPane.columnIndex="15" GridPane.rowIndex="5" />
+            <Button fx:id="at" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, nonmetal" text="At" GridPane.columnIndex="16" GridPane.rowIndex="5" />
+            <Button fx:id="rn" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, noble-gas" text="Rn" GridPane.columnIndex="17" GridPane.rowIndex="5" />
+            
+            <!-- Period 7 -->
+            <Button fx:id="fr" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, alkali-metal" text="Fr" GridPane.rowIndex="6" />
+            <Button fx:id="ra" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, alkaline-earth-metal" text="Ra" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="rf" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Rf" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Button fx:id="db" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Db" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Button fx:id="sg" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Sg" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Button fx:id="bh" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Bh" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Button fx:id="hs" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Hs" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Button fx:id="mt" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Mt" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <Button fx:id="ds" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Ds" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+            <Button fx:id="rg" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Rg" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+            <Button fx:id="cn" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Cn" GridPane.columnIndex="11" GridPane.rowIndex="6" />
+            <Button fx:id="nh" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Nh" GridPane.columnIndex="12" GridPane.rowIndex="6" />
+            <Button fx:id="fl" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Fl" GridPane.columnIndex="13" GridPane.rowIndex="6" />
+            <Button fx:id="mc" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Mc" GridPane.columnIndex="14" GridPane.rowIndex="6" />
+            <Button fx:id="lv" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Lv" GridPane.columnIndex="15" GridPane.rowIndex="6" />
+            <Button fx:id="ts" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Ts" GridPane.columnIndex="16" GridPane.rowIndex="6" />
+            <Button fx:id="og" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, transition-metal" text="Og" GridPane.columnIndex="17" GridPane.rowIndex="6" />
+
+            <Button styleClass="element-button" text="" visible="false" GridPane.rowIndex="6" />
+            
+            <!-- Lanthanide Series -->
+            <Button fx:id="la" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="La" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="ce" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Ce" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Button fx:id="pr" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Pr" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <Button fx:id="nd" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Nd" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <Button fx:id="pm" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Pm" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <Button fx:id="sm" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Sm" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <Button fx:id="eu" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Eu" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+            <Button fx:id="gd" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Gd" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+            <Button fx:id="tb" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Tb" GridPane.columnIndex="10" GridPane.rowIndex="8" />
+            <Button fx:id="dy" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Dy" GridPane.columnIndex="11" GridPane.rowIndex="8" />
+            <Button fx:id="ho" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Ho" GridPane.columnIndex="12" GridPane.rowIndex="8" />
+            <Button fx:id="er" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Er" GridPane.columnIndex="13" GridPane.rowIndex="8" />
+            <Button fx:id="tm" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Tm" GridPane.columnIndex="14" GridPane.rowIndex="8" />
+            <Button fx:id="yb" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Yb" GridPane.columnIndex="15" GridPane.rowIndex="8" />
+            <Button fx:id="lu" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, lanthanoid" text="Lu" GridPane.columnIndex="16" GridPane.rowIndex="8" />
+            
+            <!-- Actinide Series (Period 7 Extension) -->
+            <Button fx:id="ac" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Ac" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button fx:id="th" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Th" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Button fx:id="pa" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Pa" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <Button fx:id="u" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="U" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <Button fx:id="np" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Np" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+            <Button fx:id="pu" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Pu" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+            <Button fx:id="am" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Am" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+            <Button fx:id="cm" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Cm" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+            <Button fx:id="bk" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Bk" GridPane.columnIndex="10" GridPane.rowIndex="9" />
+            <Button fx:id="cf" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Cf" GridPane.columnIndex="11" GridPane.rowIndex="9" />
+            <Button fx:id="es" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Es" GridPane.columnIndex="12" GridPane.rowIndex="9" />
+            <Button fx:id="fm" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Fm" GridPane.columnIndex="13" GridPane.rowIndex="9" />
+            <Button fx:id="md" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Md" GridPane.columnIndex="14" GridPane.rowIndex="9" />
+            <Button fx:id="no" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="No" GridPane.columnIndex="15" GridPane.rowIndex="9" />
+            <Button fx:id="lr" onMouseEntered="#showDescription" onMouseExited="#hideDescription" styleClass="element-button, actinoid" text="Lr" GridPane.columnIndex="16" GridPane.rowIndex="9" />
+            <columnConstraints>
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+         </GridPane>
+         
+      </VBox>
+
+      <Button fx:id="backButton" layoutX="550.0" layoutY="718.0" onAction="#handleBackButton" style="-fx-background-color: #d68171;" styleClass="menu-button" text="Back" />
+
+         <Label fx:id="descriptionLabel" alignment="CENTER" layoutX="191.0" layoutY="569.0" prefHeight="130.0" prefWidth="819.0" style="-fx-text-alignment: center;" text="Hover over an element to see its description" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Maiandra GD" size="24.0" />
+         </font>
+      </Label>
+      <Circle fill="#ff6b6b" layoutX="20.0" layoutY="606.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#4dacff" layoutX="20.0" layoutY="639.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#0989c9" layoutX="20.0" layoutY="672.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ffb84d" layoutX="20.0" layoutY="708.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#6fb900" layoutX="20.0" layoutY="743.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="45.0" layoutY="589.0" prefHeight="35.0" prefWidth="173.0" text="NOBLE GAS" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="621.0" prefHeight="35.0" prefWidth="173.0" text="ALKALI METAL" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="654.0" prefHeight="35.0" prefWidth="173.0" text="ALKALINE EARTH METALS" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="691.0" prefHeight="35.0" prefWidth="173.0" text="TRANSITION METAL" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="726.0" prefHeight="35.0" prefWidth="180.0" text="POST-TRANSITION METALS" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Circle fill="#92ce1a" layoutX="1230.0" layoutY="647.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#c4a600" layoutX="1230.0" layoutY="680.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ff4d4d" layoutX="1230.0" layoutY="716.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ff4da6" layoutX="1230.0" layoutY="752.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label alignment="CENTER_RIGHT" layoutX="1038.0" layoutY="629.0" prefHeight="35.0" prefWidth="173.0" text="METALLOID" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="1038.0" layoutY="662.0" prefHeight="35.0" prefWidth="173.0" text="NON-METAL" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="1038.0" layoutY="699.0" prefHeight="35.0" prefWidth="173.0" text="LANTHANOID" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="1038.0" layoutY="734.0" prefHeight="35.0" prefWidth="173.0" text="ACTINOID" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

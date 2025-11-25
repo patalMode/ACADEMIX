@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" 
+    maxHeight="750.0" 
+    maxWidth="800.0" 
+    minHeight="-Infinity" 
+    minWidth="-Infinity" 
+    prefHeight="800.0" 
+    prefWidth="800.0" 
+    style="-fx-background-color: #f8d463; -fx-background-radius: 20;" 
+    stylesheets="@buttonStyles.css"
+    xmlns="http://javafx.com/javafx/23.0.1"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.adxnew.CribSheetController">
+   <children>
+      <Button fx:id="backButton" layoutX="345.0" layoutY="556.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #6ecba1; -fx-background-radius: 30; -fx-text-fill: white; -fx-font-size: 18; -fx-font-family: 'Bauhaus 93';" styleClass="menu-button" text="BACK">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="241.0" prefWidth="245.0" style="-fx-background-color: #256600; -fx-background-radius: 20;" text="ALGEBRA" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font></Button>
+      <Button layoutX="273.0" layoutY="14.0" mnemonicParsing="false" prefHeight="173.0" prefWidth="207.0" style="-fx-background-color: #03619c; -fx-background-radius: 20;" text="POLYNOMIALS" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font></Button>
+      <Button layoutX="273.0" layoutY="194.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="513.0" style="-fx-background-color: #9e6324; -fx-background-radius: 20;" text="GEOMETRY" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font></Button>
+      <Button layoutX="493.0" layoutY="14.0" mnemonicParsing="false" prefHeight="173.0" prefWidth="293.0" style="-fx-background-color: #7d9c03; -fx-background-radius: 20;" text="COMPARISON" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font></Button>
+      <Button layoutX="695.0" layoutY="269.0" mnemonicParsing="false" prefHeight="224.0" prefWidth="91.0" style="-fx-background-color: #f72d6d; -fx-background-radius: 20;" text="RATIOS&#10;&#10;&#10;" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font></Button>
+      <Button layoutX="273.0" layoutY="269.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="408.0" style="-fx-background-color: #812df7; -fx-background-radius: 20;" text="FRACTIONS" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font></Button>
+      <Button layoutX="14.0" layoutY="269.0" mnemonicParsing="false" prefHeight="138.0" prefWidth="245.0" style="-fx-background-color: #b00505; -fx-background-radius: 20;" text="PROBABILITY" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font></Button>
+      <Button layoutX="11.0" layoutY="418.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="669.0" style="-fx-background-color: #24f053; -fx-background-radius: 20;" text="TRIGONOMETRY" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="30.0" />
+         </font></Button>
+      <Button layoutX="273.0" layoutY="358.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="408.0" style="-fx-background-color: #128cb5; -fx-background-radius: 20;" text="QUADRATIC EQUATION" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="21.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
